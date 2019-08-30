@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1567176628 source:d:\nueva carpeta\hector onetto\clase 4\aritmetica.c
+	<stdio.h>
+	"Aritmetica.h"
+
+1567186166 d:\nueva carpeta\hector onetto\clase 4\aritmetica.h
+	<stdio.h>
+
+1567176771 source:d:\nueva carpeta\hector onetto\clase 4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Aritmetica.h"
+
