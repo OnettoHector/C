@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1567782875 source:d:\onetto\cadenas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1567782415 source:d:\onetto\cadenas\ejercicio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
