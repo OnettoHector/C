@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1568295027 source:d:\onetto\clase 7\main.c
+	<stdio.h>
+	<stdlib.h>
+	"CargarConDatos.h"
+
+1568295227 source:d:\onetto\clase 7\cargarcondatos.c
+	<stdio.h>
+	<stdlib.h>
+	"CargarConDatos.h"
+	<string.h>
+
+1568294717 d:\onetto\clase 7\cargarcondatos.h
+	<stdlib.h>
+	<stdio.h>
+
