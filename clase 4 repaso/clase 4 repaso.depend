@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1568905510 source:d:\nueva carpeta\clase 4 repaso\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"utn.h"
+
+1568905433 d:\nueva carpeta\clase 4 repaso\utn.h
+	<stdio.h>
+	<stdlib.h>
+
+1568905260 source:d:\nueva carpeta\clase 4 repaso\utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
