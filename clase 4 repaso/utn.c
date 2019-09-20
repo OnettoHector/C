@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "utn.h"
+#include <time.h>
 
 int getInt()
 {
@@ -29,7 +30,7 @@ char getChar()
 char continuarJugando()
 {
             int continuar;
-            printf("Desea continuar? Presione S \n");
+            printf("Desea continuar? Presione S para seguir || cualquier otra tecla para salir. \n");
             fflush(stdin);
             continuar = getchar();
             return continuar;
@@ -39,10 +40,11 @@ int generarNumeroRandom()
 {
     int numeroRandom;
 
-    time_t t;
-    srand((unsigned) time(&t));
+    srand(time(0)); //Si esto se mete dentro de un loop para crear varios numeros random diferentes, hay que declarar SRAND fuera de el loop o da siempre el mismo (es decir, comentar esta linea)
 
-    numeroRandom = rand() %100 +1;
+    numeroRandom = rand() %100 +1; //El 100 determina el limite, pero como incluye el 0 hay que hacer +1 para que incluya el 100
+
+    printf("el numero random es %d \n",numeroRandom);
 
     return numeroRandom;
 }
@@ -51,29 +53,36 @@ void esqueletoJuego()
 {
     int numeroIngresado;
     int numeroRandom;
-    int i;
-
-    numeroRandom = generarNumeroRandom();
+    int primeraVez = 1;
+    int i = 's';
 
     do
     {
+        if (primeraVez == 1)
+        {
+        numeroRandom = generarNumeroRandom();
         printf("Ingrese su numero: \n");
         numeroIngresado = getInt();
+        primeraVez = 0;
+        }
 
         if (numeroIngresado < numeroRandom)
         {
             printf("El numero ingresado es menor al numero random. \n");
-            i = continuarJugando();
+            printf("Ingrese su numero: \n");
+            numeroIngresado = getInt();
         }
         if (numeroIngresado > numeroRandom)
         {
             printf("El numero ingresado es mayor al numero random. \n");
-            i = continuarJugando();
+            printf("Ingrese su numero: \n");
+            numeroIngresado = getInt();
         }
         if (numeroIngresado == numeroRandom)
         {
             printf("Felicitaciones, ha ganado! \n");
-            i = 'n';
+            i = continuarJugando();
+            primeraVez = 1;
         }
 
     }while (i == 's' || i == 'S');

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1568855981 source:c:\users\martín onetto\documents\c\clase 3 repaso\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

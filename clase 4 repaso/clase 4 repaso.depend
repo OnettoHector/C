@@ -14,3 +14,19 @@
 	<stdlib.h>
 	"utn.h"
 
+1568942207 source:c:\users\martín onetto\documents\c\clase 4 repaso\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"utn.h"
+
+1568940442 c:\users\martín onetto\documents\c\clase 4 repaso\utn.h
+	<stdio.h>
+	<stdlib.h>
+
+1568944045 source:c:\users\martín onetto\documents\c\clase 4 repaso\utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	<time.h>
+

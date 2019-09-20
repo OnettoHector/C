@@ -5,14 +5,19 @@
 
 int main()
 {
-    int i;
-    for (i = 0; i < 5; i++)
-    {
-    int numeroAleatorio = generarNumeroRandom();
-// checkear que la funcion del numero aleatorio anda como el coño
-    printf("El numero generado es %d \n",numeroAleatorio);
-    }
+    //srand(time(0));
+    //for (i = 0; i < 5; i++)
 
-    //esqueletoJuego();
+    //srand(time(0));
+    //int numeroAleatorio = rand();
+
+    //printf("%d",rand()); //Siempre da numeros similares???
+
+    //int numeroAleatorio = generarNumeroRandom();
+
+    //printf("El numero generado es %d \n",numeroAleatorio);
+
+    esqueletoJuego();
 }
+
 
