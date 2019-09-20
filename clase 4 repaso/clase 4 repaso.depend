@@ -30,3 +30,19 @@
 	"utn.h"
 	<time.h>
 
+1568995929 source:d:\onetto\clase 4 repaso\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"utn.h"
+
+1568994079 d:\onetto\clase 4 repaso\utn.h
+	<stdio.h>
+	<stdlib.h>
+
+1568996541 source:d:\onetto\clase 4 repaso\utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	<time.h>
+

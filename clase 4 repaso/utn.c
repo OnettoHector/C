@@ -40,11 +40,11 @@ int generarNumeroRandom()
 {
     int numeroRandom;
 
-    srand(time(0)); //Si esto se mete dentro de un loop para crear varios numeros random diferentes, hay que declarar SRAND fuera de el loop o da siempre el mismo (es decir, comentar esta linea)
+    srand(time(NULL)); //Si esto se mete dentro de un loop para crear varios numeros random diferentes, hay que declarar SRAND fuera de el loop o da siempre el mismo (es decir, comentar esta linea)
 
     numeroRandom = rand() %100 +1; //El 100 determina el limite, pero como incluye el 0 hay que hacer +1 para que incluya el 100
 
-    printf("el numero random es %d \n",numeroRandom);
+
 
     return numeroRandom;
 }
