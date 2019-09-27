@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1569508704 source:d:\molinai\estacionamiento\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1569587604 source:d:\molinai\laboratorio1\estacionamiento\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1569601457 source:c:\users\alumno\downloads\relaciones-entre-estructuras-master (1)\relaciones-entre-estructuras-master\estacionamiento\estacionamiento.c
+	<stdlib.h>
+	<stdio.h>
+	"estacionamiento.h"
+
+1569601457 c:\users\alumno\downloads\relaciones-entre-estructuras-master (1)\relaciones-entre-estructuras-master\estacionamiento\estacionamiento.h
+	<stdlib.h>
+	<stdio.h>
+
