@@ -22,6 +22,7 @@ float getFloat();
 
 char getChar();
 
+
 /**
  * \brief Pregunta si se desea continuar y toma la respuesta ingresada por el usuario
  * \return El caracter ingresado por el usuario
@@ -36,9 +37,6 @@ char getChar();
 
  float calcularPromedio (float , int);
 
-
-char confirmacionChar();
-
 /**
  * \brief Genera un numero random (maximo 100) y lo devuelve
  * \return Numero aleatorio (maximo 100)
@@ -52,3 +50,13 @@ int generarNumeroRandom();
 void esqueletoJuego ();
 
 int soloNumeros(char strg[]);
+
+int soloLetras(char strg[]);
+
+int soloAlfaNumerico(char strg[]);
+
+int soloTelefonico(char strg[]);
+
+void inicializarArray(int elArray[], int capacidad, int valor);
+
+int recorrerArray(int elArray[], int capacidad, int valor);

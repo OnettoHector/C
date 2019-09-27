@@ -22,6 +22,7 @@ float getFloat();
 
 char getChar();
 
+
 /**
  * \brief Pregunta si se desea continuar y toma la respuesta ingresada por el usuario
  * \return El caracter ingresado por el usuario
@@ -52,3 +53,9 @@ int generarNumeroRandom();
 void esqueletoJuego ();
 
 int soloNumeros(char strg[]);
+
+int soloLetras(char strg[]);
+
+int soloAlfaNumerico(char strg[]);
+
+int soloTelefonico(char strg[]);

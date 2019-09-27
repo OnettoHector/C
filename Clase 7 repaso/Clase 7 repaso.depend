@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1569538199 source:c:\users\martín onetto\documents\c\clase 7 repaso\utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	<time.h>
+
+1569533759 c:\users\martín onetto\documents\c\clase 7 repaso\utn.h
+	<stdio.h>
+	<stdlib.h>
+
+1569538247 source:c:\users\martín onetto\documents\c\clase 7 repaso\main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+

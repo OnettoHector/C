@@ -28,6 +28,7 @@ char getChar()
     return caracterChar;
 }
 
+
 float calcularPromedio (float dividendo,int divisor)
 {
     float promedio;
@@ -100,7 +101,7 @@ void esqueletoJuego()
 
 int soloNumeros(char strg[])
 {
-    int i=0
+    int i=0;
 
     while (strg[i] != '\0')
     {
@@ -108,8 +109,92 @@ int soloNumeros(char strg[])
         {
             return 0;
         }
-        else
+        i++;
+    }
             return 1;
-        i++
 
 }
+
+int soloLetras(char strg[])
+{
+    int i=0;
+
+    while (strg[i] != '\0')
+    {
+        if (strg[i] != ' ' && (strg[i] <'a' || strg[i] >'z') && (strg[i] < 'A' || strg[i] > 'Z'))
+    {
+        return 0;
+    }
+    i++;
+
+    }
+
+        return 1;
+
+    }
+
+int soloAlfaNumerico(char strg[])
+{
+    int i = 0;
+
+    while (strg[i] != '\0')
+    {
+        if ((strg[i] < '0' || strg[i] > '9') && strg[i] != ' ' && (strg[i] < 'a' || strg[i] > 'z') && (strg[i] < 'A' || strg[i] > 'Z'))
+        {
+            return 0;
+        }
+
+        i++;
+    }
+    return 1;
+}
+
+int soloTelefonico(char strg[])
+{
+    int i = 0;
+    int contadorGuiones = 0;
+
+    while (strg[i] != '\0')
+    {
+        if ((strg[i] != ' ') && (strg[i] != '-') && (strg[i] < '0' || strg[i] > '9'))
+        return 0;
+
+        if (strg[i] == '-'){
+            contadorGuiones = 1;
+            return 1;
+            }
+
+        i++;
+    }
+    return 0;
+}
+
+void inicializarArray(int elArray[], int capacidad, int valor)
+{
+    int i;
+
+    for (i = 1; i<capacidad+1; i++)
+    {
+        elArray[i] = valor;
+    }
+}
+
+int recorrerArray(int elArray[], int capacidad, int valor)
+{
+int i;
+
+for (i = 1; i < capacidad; i++)
+{
+    if (elArray[i] != valor)
+    {
+        return 1;
+    }
+}
+    return 0;
+
+}
+
+
+
+
+

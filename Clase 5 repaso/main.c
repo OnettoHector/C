@@ -112,7 +112,124 @@ int main()
     */
 
 
+    /**************EJERCICIO TERMINADO**************
 
 
+    int numeros[5];
+    int i;
+    int respuesta;
+    int flag = 0;
+    int numeroMax;
+    int numeroMin;
+    float promedioNumeros;
+    int sumaNumeros = 0;
+    int modificar;
+
+    printf("Bienvenido, que desea hacer? \n");
+    printf("Opcion 1: Cargar 5 numeros. \n");
+    printf("Opcion 2: Mostrarlos en pantalla. \n");
+    printf("Opcion 3: Modificar un numero ingresado \n");
+    printf("Opcion 4: Salir \n");
+
+    respuesta = getInt();
+
+    do
+    {
+    switch (respuesta)
+    {
+    case 1:
+
+        for (i = 0; i < 5; i++)
+    {
+        printf("Por favor, ingrese el numero %d: \n", i+1);
+        numeros[i] = getInt();
+        sumaNumeros = sumaNumeros + numeros[i];
+
+
+        if (i == 1)
+        {
+        numeroMax = numeros [0];
+        numeroMin = numeros [0];
+        }
+
+        if (numeros[i] > numeroMax)
+            numeroMax = numeros[i];
+
+        if (numeros[i] < numeroMin)
+            numeroMin = numeros[i];
+    }
+        promedioNumeros = calcularPromedio(sumaNumeros, i);
+
+        flag = 1;
+
+        printf("Que desea hacer a continuacion? \n");
+        respuesta = getInt();
+        break;
+
+
+    case 2:
+        if (flag == 0)
+        {
+            printf("Debe cargar datos antes de mostrarlos \n");
+            printf("Seleccione una opcion correcta. \n");
+            respuesta = getInt();
+        }
+        else
+        {
+            printf("Los datos cargados son: \n");
+            for (i = 0; i < 5; i++)
+            printf("%d \n", numeros [i]);
+
+            printf("El maximo es %d \n", numeroMax);
+            printf("El minimo es %d \n", numeroMin);
+            printf("El promedio es %f \n", promedioNumeros);
+
+            printf("Que desea hacer a continuacion? \n");
+            respuesta = getInt();
+
+
+        }
+        break;
+
+    case 3:
+
+        if (flag == 0)
+        {
+            printf("Debe cargar datos antes de modificarlos \n");
+            printf("Seleccione una opcion correcta. \n");
+            respuesta = getInt();
+        }
+        else
+        {
+         printf("Seleccione que numero desea modificar \n");
+         modificar = getInt();
+         printf("Que valor desea asignar al numero %d ? \n", modificar);
+         numeros[modificar-1] = getInt();
+
+         if (numeroMax > numeros[modificar-1])
+          numeroMax = numeros[modificar-1];
+
+         if (numeroMin < numeros[modificar-1])
+            numeroMin = numeros[modificar-1];
+
+         for (i = 0; i<5;i++)
+         {
+         if (numeros[i] > numeroMax)
+            numeroMax = numeros[i];
+
+         if (numeros[i] < numeroMin)
+            numeroMin = numeros[i];
+         }
+
+         printf("Que desea hacer a continuacion? \n");
+            respuesta = getInt();
+            break;
+
+
+        }
+        }
+
+    }while (respuesta !=4);
 
     }
+
