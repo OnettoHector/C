@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1570714091 source:d:\onetto\master\parcial laboratorio 1\arrays.c
+	"arrays.h"
+	<string.h>
+
+1570714091 d:\onetto\master\parcial laboratorio 1\arrays.h
+
+1570708406 source:d:\onetto\master\parcial laboratorio 1\validaciones.c
+	"validaciones.h"
+
+1570708406 d:\onetto\master\parcial laboratorio 1\validaciones.h
+
+1570716086 source:d:\onetto\master\parcial laboratorio 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"eEquipos.h"
+	"eJugadores.h"
+
+1570711331 source:d:\onetto\master\parcial laboratorio 1\utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	<time.h>
+
+1570709928 d:\onetto\master\parcial laboratorio 1\utn.h
+	<stdio.h>
+	<stdlib.h>
+
+1570715873 source:d:\onetto\master\parcial laboratorio 1\eequipos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"eEquipos.h"
+
+1570714547 d:\onetto\master\parcial laboratorio 1\eequipos.h
+	<stdio.h>
+	<stdlib.h>
+	"eFecha.h"
+
+1570712714 d:\onetto\master\parcial laboratorio 1\ejugadores.h
+
+1570712502 d:\onetto\master\parcial laboratorio 1\efecha.h
+	<stdio.h>
+	<stdlib.h>
+
+1570712766 source:d:\onetto\master\parcial laboratorio 1\ejugadores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1570712316 d:\onetto\master\parcial laboratorio 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"eEquipos.h"
+	"eJugadores.h"
+
