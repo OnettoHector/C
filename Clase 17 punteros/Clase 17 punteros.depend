@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1571927902 source:d:\nueva carpeta\clase 17 punteros\main.c
+	<stdio.h>
+	<stdlib.h>
+	"validaciones.h"
+	"utn.h"
+	"arrays.h"
+
+1571918361 d:\nueva carpeta\clase 17 punteros\validaciones.h
+
+1571919240 d:\nueva carpeta\clase 17 punteros\utn.h
+	<stdio.h>
+	<stdlib.h>
+
+1571918361 source:d:\nueva carpeta\clase 17 punteros\validaciones.c
+	"validaciones.h"
+
+1571919367 source:d:\nueva carpeta\clase 17 punteros\utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	<time.h>
+
+1571923491 source:d:\nueva carpeta\clase 17 punteros\arrays.c
+	"arrays.h"
+	<string.h>
+
+1571918361 d:\nueva carpeta\clase 17 punteros\arrays.h
+
