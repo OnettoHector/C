@@ -22,38 +22,55 @@
 
 int main()
 {
+    FILE *archivoEmpleadosTxt;
     int option = 0;
     int i;
-    Employee* empleadoQ = employee_new();
-    Employee* empleadoW = employee_newParametros("2","Juanceli","6");
-
-    empleadoQ->id = 1;
-    strcpy(empleadoQ->nombre,"Ouchurus");
-    empleadoQ->horasTrabajadas = 12;
-    //printf("%d %s %d \n", empleadoQ->id,empleadoQ->nombre, empleadoQ->horasTrabajadas);
-
-
-    //printf("%d %s %d", empleadoW->id,empleadoW->nombre, empleadoW->horasTrabajadas);
 
     LinkedList* listaEmpleados = ll_newLinkedList();
 
-    ll_add(listaEmpleados,empleadoQ);
-    ll_add(listaEmpleados,empleadoW);
+    do{
+            printf("Ingrese una opcion \n"
+                   "1: Cargar datos desde archivo (texto)\n"
+                   "2: Cargar datos desde archivo (binario)\n"
+                   "3: Dar de alta un empleado\n"
+                   "4: Modificar datos de empleado\n"
+                   "5: Dar de baja un empleado\n"
+                   "6: Listar empleados\n"
+                   "7: Ordenar empleados\n" //por todos los criterios disponibles
+                   "8: Guardar datos de empleados en archivo (texto)\n"
+                   "9: Guardar datos de empleados en archivo (binario)\n"
+                   "10:Salir \n");
 
-    for (i=0; i<ll_len(listaEmpleados);i++)
-    {
-        Employee* empleados = ll_get(listaEmpleados,i);
-        printf("%d | %s | %d \n",empleados->id,empleados->nombre,empleados->horasTrabajadas);
+                    scanf("%d", &option);
 
-    }
-
-    /*do{
         switch(option)
         {
             case 1:
-                //controller_loadFromText("data.csv",listaEmpleados);
+                system("cls");
+                controller_loadFromText("data.csv",listaEmpleados);
+                system("pause");
+                system("cls");
                 break;
+
+            case 2:
+                system("cls");
+                controller_loadFromBinary("data.bin.csv",listaEmpleados);
+                system("pause");
+                system("cls");
+                break;
+
+            case 3:
+                system("cls");
+                controller_addEmployee(listaEmpleados);
+                break;
+
+            case 6:
+                system("cls");
+                controller_ListEmployee(listaEmpleados);
+                system("pause");
+                system("cls");
+            break;
         }
-    }while(option != 10);*/
+    }while(option != 10);
     return 0;
 }

@@ -33,4 +33,10 @@ Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajad
     return reservoir;
 }
 
+int employee_setSueldo(Employee* this,int sueldo)
+{
+    this->sueldo = sueldo;
+
+    return 1;
+}
 
